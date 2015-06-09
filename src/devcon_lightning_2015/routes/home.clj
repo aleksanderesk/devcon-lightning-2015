@@ -28,7 +28,8 @@
 
 (def route-example
   (clojure.string/join "\n"
-                       ["(defroutes app-routes"
+                       ["; A partial Quine"
+                        "(defroutes app-routes"
                         "  (route/resources \"/\")"
                         "  (route/not-found \"Not Found\"))"
                         ""
@@ -103,7 +104,7 @@
          [:h1.text-center "Why Would We do This?"]
          [:p "Why use Clojure for Web Dev?"]
          [:ul
-          [:li "Clojure's a natural backend language"]
+          [:li "Clojure's a natural backend language (the little engine that cdr)"]
           [:li "Libraries built over, and interop with Java makes doing a large number of tasks accessible in the native language"]
           [:li "Also still good in larger production, with facilities to manage:"
            [:ul
@@ -126,8 +127,7 @@
    :6 [:div
        (make-nav 5 1)
        (make-body
-         [:h1.text-center "End"]
-         [:h4.text-center "Questions?"])]}) 
+         [:h1.text-center "End"])]}) 
 
 (defn get-slide [slide-num]
   (layout/common (get slides (keyword slide-num))))
