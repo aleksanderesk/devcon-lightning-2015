@@ -79,7 +79,7 @@
           [:li "JSON"]
           [:li "Files"]])]
    :3 [:div
-       (make-nav 2 3)
+       (make-nav 2 4)
        (make-body
          [:h1.text-center "How do We Handle Requests?"]
          [:p "Ring provides means of handling HTTP protocol, we'd like a nice abstraction to handle routing traffic either to provide pages or to expose components of an API."]
