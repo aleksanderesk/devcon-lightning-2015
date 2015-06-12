@@ -2,6 +2,7 @@
   (:require [compojure.core :refer :all]
             [devcon-lightning-2015.views.layout :as layout]))
 
+;;; Note: This isn't really Compojure-structured MVC
 (def example-request
   {:ssl-client-cert nil :cookies {}
    :remote-addr "0:0:0:0:0:0:0:1"
